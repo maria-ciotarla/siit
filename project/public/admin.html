@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Editare lista produse</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Listă produse:</h2>
+                <ul id="adminList">
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <legend id="legend">Adaugă un produs</legend>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nume</label>
+                            <input type="text" class="form-control" id="name" placeholder="Introduce-ți numele" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Descriere</label>
+                            <input type="text" class="form-control" id="description"
+                                placeholder="Introduce-ți descrierea">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="url">Url</label>
+                        <input type="text" class="form-control" id="url" placeholder="Introduce-ți url-ul"
+                            value="/img/">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Preț</label>
+                        <input type="text" class="form-control" id="price" placeholder="Introduce-ți prețul"
+                            value="lei">
+                    </div>
+
+                    <input type="submit" class="btn btn-primary" id="insertUpdate" value="Adaugă"></input>
+                    
+                </form>
+                <div id="feedback" style="color:green"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/getProducts.js"></script>
+
+
+</body>
+
+</html>
