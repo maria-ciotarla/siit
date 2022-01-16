@@ -22,6 +22,7 @@ $(document).ready(() => {
         }
 
         $("#confirma").on("click",()=>{
+            localStorage.clear()
             alert("Comanda a fost plasată")
         })
     })
