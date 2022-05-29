@@ -1,0 +1,28 @@
+span {
+    color: white;
+  }
+  
+  .lowRating {
+    background-color: #ff3f34;
+    padding: 10px;
+  }
+  
+  .mediumRating {
+    background: #ffd32a;
+    padding: 10px;
+  }
+  
+  .highRating {
+    background: #05c46b;
+    padding: 10px;
+  }
+  
+  .godLike {
+    background: #3c40c6;
+    padding: 10px;
+  }
+  
+  .test {
+    background: yellow;
+    color: red;
+  }

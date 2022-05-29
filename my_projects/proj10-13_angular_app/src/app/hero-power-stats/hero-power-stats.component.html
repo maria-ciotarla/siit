@@ -1,0 +1,25 @@
+
+<div *ngIf="hero">
+    <h2>PowerStats</h2>
+    <div>
+        <label for="combat">Combat: </label>
+        <input id="combat-id" [(ngModel)]="hero.powerStats.combat" placeholder="combatname" type="number">
+    </div>
+    <div>
+        <label for="speed">Speed: </label>
+        <input id="speed-id" [(ngModel)]="hero.powerStats.speed" placeholder="speedname" type="number">
+    </div>
+    <div>
+        <label for="strength">Strength: </label>
+        <input id="strength-id" [(ngModel)]="hero.powerStats.strength" placeholder="strengthname" type="number">
+    </div>
+    <div>
+        <label for="intelligence">Intelligence: </label>
+        <input id="intelligence-id" [(ngModel)]="hero.powerStats.intelligence" placeholder="intelligencename" type="number">
+    </div>
+    
+    <!--<div><span>Speed: </span>{{hero.powerStats.speed}}</div>
+    <div><span>Intelligence: </span>{{hero.powerStats.intelligence}}</div>
+    <div><span>Strength: </span>{{hero.powerStats.strength}}</div>-->
+    <app-hero-overall-rating [hero]="hero"></app-hero-overall-rating>
+  </div>
